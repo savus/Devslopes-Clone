@@ -2,9 +2,9 @@ export const TopHeader = () => {
   return (
     <div className="top-header">
       <div className="top-navigation">
-        <div className="header-logo">DEVSLOPES</div>
+        <div className="header-logo ">DEVSLOPES</div>
         <nav className="header-navbar">
-          <ul>
+          <ul className="ul-defaults-none flex-centered">
             <li>
               <a href="#">Plans</a>
             </li>

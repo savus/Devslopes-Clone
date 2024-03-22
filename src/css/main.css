@@ -15,7 +15,6 @@
   --size-100: 6.25rem;
   --size-150: 9.375rem;
   --size-200: 12.5rem;
-  /*colors*/
 }
 
 *,
@@ -39,4 +38,20 @@ body {
   font-size: 1rem;
   text-align: left;
   font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  background: transparent;
+}
+
+.ul-defaults-none {
+  list-style: none;
+}
+
+.flex-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
