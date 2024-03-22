@@ -2,7 +2,7 @@
   width: 100%;
 }
 
-.top-header .top-navigation {
+.top-navigation {
   max-width: 1024px;
   justify-content: space-between;
   display: flex;

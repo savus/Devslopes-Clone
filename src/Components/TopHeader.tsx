@@ -1,3 +1,5 @@
+import "../css/top-header.css";
+
 export const TopHeader = () => {
   return (
     <div className="top-header">
