@@ -55,3 +55,10 @@ a {
   justify-content: center;
   align-items: center;
 }
+
+.btn {
+  appearance: none;
+  outline: none;
+  border: transparent;
+  background-color: transparent;
+}
