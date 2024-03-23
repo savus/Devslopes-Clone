@@ -58,15 +58,12 @@
     display: unset;
   }
 
-  .top-header [aria-expanded="false"] ~ .top-navigation {
-    display: none;
-  }
   /* 
   .top-header [aria-expanded="true"] {
     color: white;
   } */
 
-  .top-header [aria-expanded="true"] ~ .top-navigation {
+  .top-header [aria-expanded] ~ .top-navigation {
     position: absolute;
     top: 60px;
     left: 0;
@@ -74,6 +71,14 @@
     bottom: 0;
     background-color: #969696;
     color: white;
+    opacity: 0;
+    visibility: 0;
+  }
+  .top-header [aria-expanded="true"] ~ .top-navigation {
+    transition: background-color 400ms ease, opacity 400ms ease,
+      visibility 400ms ease;
+    opacity: 1;
+    visibility: 1;
   }
 
   .top-header [aria-expanded="true"] ~ .top-navigation ul {
