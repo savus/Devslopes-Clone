@@ -1,9 +1,25 @@
+import { useEffect, useState } from "react";
 import "../css/top-header.css";
 
 export const TopHeader = () => {
+  const useReact = true;
+  const [ariaExpandedState, setAriaExpandedState] = useState<"true" | "false">(
+    "false"
+  );
+
+  useEffect(() => {
+    if (useReact) {
+      window.addEventListener("resize", () => {
+        if (window.innerWidth > 767) {
+          setAriaExpandedState("false");
+        }
+      });
+    }
+  }, []);
+
   return (
     <div className="top-header">
-      <div className="top-navigation">
+      <div className="header-container">
         <div className="header-logo ">
           <a href="https://devslopes.thinkific.com">
             <img
@@ -12,10 +28,20 @@ export const TopHeader = () => {
             />
           </a>
         </div>
-        <button className="btn trigram" aria-expanded="true">
+        <button
+          className="btn trigram"
+          aria-expanded={ariaExpandedState}
+          onClick={() => {
+            if (useReact) {
+              const oppositeAria =
+                ariaExpandedState === "true" ? "false" : "true";
+              setAriaExpandedState(oppositeAria);
+            }
+          }}
+        >
           <i className="fa fa-bars"></i>
         </button>
-        <nav className="header-navbar">
+        <nav className="top-navigation">
           <ul className="ul-defaults-none flex-centered">
             <li>
               <a href="#">Plans</a>
