@@ -19,7 +19,7 @@ export const TopHeader = () => {
 
   return (
     <div className="top-header">
-      <div className="header-container">
+      <div className={`header-container aria-expanded-${ariaExpandedState}`}>
         <div className="header-logo ">
           <a href="https://devslopes.thinkific.com">
             <img
@@ -40,6 +40,7 @@ export const TopHeader = () => {
           }}
         >
           <i className="fa fa-bars"></i>
+          <span>Menu</span>
         </button>
         <nav className="top-navigation">
           <ul className="ul-defaults-none flex-centered">
