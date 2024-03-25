@@ -11,6 +11,7 @@
   padding: 30px;
   border-bottom: 1px solid black;
   transition: background-color 250ms ease;
+  margin: 0 auto;
 }
 
 .top-header .header-logo img {
