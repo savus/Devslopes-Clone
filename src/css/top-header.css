@@ -3,8 +3,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid black;
   padding: 0 30px;
+  transition: background-color 400ms ease;
 }
 
 .top-header .logo-container {
@@ -13,6 +13,19 @@
 
 .top-header .logo-container img {
   width: 100%;
+}
+
+.top-header .trigram {
+  display: none;
+}
+
+.top-header .trigram .fa-x {
+  color: white;
+  transition: color 400ms ease;
+}
+
+.top-header .trigram .fa-x:hover {
+  color: var(--font-base);
 }
 
 .top-header .trigram,
@@ -49,15 +62,28 @@
   text-transform: uppercase;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 675px) {
+  .top-header .aria-expanded-true {
+    background-color: var(--bg-secondary);
+  }
+
+  .top-header [aria-expanded="true"] ~ .top-navigation {
+    transition: visibility 400ms ease, opacity 400ms ease;
+    visibility: 1;
+    opacity: 1;
+  }
+
   .top-header .top-navigation {
     position: fixed;
     top: 80px;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #969696;
+    background-color: var(--bg-secondary);
     height: 100%;
+    visibility: 0;
+    opacity: 0;
+
     z-index: 20;
   }
 
@@ -83,6 +109,7 @@
   .top-header .header-nav a:hover {
     background-color: #898989;
   }
+
   .top-header .trigram {
     display: flex;
     flex-direction: column;
@@ -90,5 +117,9 @@
 
   .top-header .trigram[aria-expanded="false"] .fa-x {
     display: none;
+  }
+
+  .top-header .trigram[aria-expanded="true"] span {
+    color: white;
   }
 }

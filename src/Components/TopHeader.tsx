@@ -19,15 +19,28 @@ export const TopHeader = () => {
 
   return (
     <header className="top-header">
-      <div className="header-container container">
+      <div
+        className={`header-container container aria-expanded-${ariaExpandedState}`}
+      >
         <div className="logo-container">
           <a href="#">
             <img src="../src/images/devslopes-logo.png" alt="" />
           </a>
         </div>
-        <button className="trigram btn" aria-expanded="false">
-          <i className="fa fa-bars"></i>
-          <i className="fa fa-x"></i>
+        <button
+          className="trigram btn"
+          aria-expanded={ariaExpandedState}
+          onClick={(e) => {
+            e.preventDefault();
+            const valueToSet = ariaExpandedState === "true" ? "false" : "true";
+            setAriaExpandedState(valueToSet);
+          }}
+        >
+          {ariaExpandedState === "true" ? (
+            <i className="fa fa-x"></i>
+          ) : (
+            <i className="fa fa-bars"></i>
+          )}
           <span>Menu</span>
         </button>
         <nav className="top-navigation">
