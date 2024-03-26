@@ -39,7 +39,12 @@ export const TopHeader = () => {
             }
           }}
         >
-          <i className="fa fa-bars"></i>
+          {ariaExpandedState === "true" ? (
+            <i className="fa-solid fa-x"></i>
+          ) : (
+            <i className="fa fa-bars"></i>
+          )}
+
           <span>Menu</span>
         </button>
         <nav className="top-navigation">
