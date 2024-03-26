@@ -1,1 +1,94 @@
+.top-header .header-container {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+  padding: 0 30px;
+}
 
+.top-header .logo-container {
+  width: 250px;
+}
+
+.top-header .logo-container img {
+  width: 100%;
+}
+
+.top-header .trigram,
+.top-header .header-nav a {
+  color: var(--lnk-base);
+}
+
+.top-header .trigram i,
+.top-header .header-nav a {
+  cursor: pointer;
+  transition: color 400ms ease;
+}
+
+.top-header .trigram i:hover,
+.top-header .header-nav a:hover {
+  color: var(--lnk-hover);
+}
+
+.top-header .trigram i {
+  font-size: var(--size-30);
+}
+
+.top-header .trigram span,
+.top-header .header-nav {
+  font-size: var(--size-12);
+}
+
+.top-header .header-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1023px) {
+  .top-header .top-navigation {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #969696;
+    height: 100%;
+    z-index: 20;
+  }
+
+  .top-header .header-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 0 15px;
+  }
+
+  .top-header .header-nav li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .top-header .header-nav a {
+    color: white;
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .top-header .header-nav a:hover {
+    background-color: #898989;
+  }
+  .top-header .trigram {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .top-header .trigram[aria-expanded="false"] .fa-x {
+    display: none;
+  }
+}

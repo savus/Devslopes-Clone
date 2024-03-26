@@ -10,7 +10,7 @@ function App() {
     <>
       <MainSection>
         <TopHeader />
-        {/* <VideoSection /> */}
+        <VideoSection />
       </MainSection>
     </>
   );

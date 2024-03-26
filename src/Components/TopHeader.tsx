@@ -18,7 +18,7 @@ export const TopHeader = () => {
   }, []);
 
   return (
-    <div className="top-header">
+    <header className="top-header">
       <div className="header-container container">
         <div className="logo-container">
           <a href="#">
@@ -31,7 +31,7 @@ export const TopHeader = () => {
           <span>Menu</span>
         </button>
         <nav className="top-navigation">
-          <ul className="top-navbar">
+          <ul className="header-nav">
             <li>
               <a href="#">Plans</a>
             </li>
@@ -39,14 +39,14 @@ export const TopHeader = () => {
               <a href="#">Youtube</a>
             </li>
             <li>
-              <a href="#">instagram</a>
+              <a href="#">Instagram</a>
             </li>
             <li>
-              <a href="#">sign in</a>
+              <a href="#">Sign In</a>
             </li>
           </ul>
         </nav>
       </div>
-    </div>
+    </header>
   );
 };
