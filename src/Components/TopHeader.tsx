@@ -19,36 +19,19 @@ export const TopHeader = () => {
 
   return (
     <div className="top-header">
-      <div className={`header-container aria-expanded-${ariaExpandedState}`}>
-        <div className="header-logo ">
-          <a href="https://devslopes.thinkific.com">
-            <img
-              src="https://import.cdn.thinkific.com/88925/5RGTrmvS4SfYoD10SKAw_logo.png"
-              alt="devslopes logo"
-            />
+      <div className="header-container container">
+        <div className="logo-container">
+          <a href="#">
+            <img src="../src/images/devslopes-logo.png" alt="" />
           </a>
         </div>
-        <button
-          className="btn trigram"
-          aria-expanded={ariaExpandedState}
-          onClick={() => {
-            if (useReact) {
-              const oppositeAria =
-                ariaExpandedState === "true" ? "false" : "true";
-              setAriaExpandedState(oppositeAria);
-            }
-          }}
-        >
-          {ariaExpandedState === "true" ? (
-            <i className="fa-solid fa-x"></i>
-          ) : (
-            <i className="fa fa-bars"></i>
-          )}
-
+        <button className="trigram btn" aria-expanded="false">
+          <i className="fa fa-bars"></i>
+          <i className="fa fa-x"></i>
           <span>Menu</span>
         </button>
         <nav className="top-navigation">
-          <ul className="ul-defaults-none flex-centered">
+          <ul className="top-navbar">
             <li>
               <a href="#">Plans</a>
             </li>
@@ -56,10 +39,10 @@ export const TopHeader = () => {
               <a href="#">Youtube</a>
             </li>
             <li>
-              <a href="#">Instagram</a>
+              <a href="#">instagram</a>
             </li>
             <li>
-              <a href="#">Sign In</a>
+              <a href="#">sign in</a>
             </li>
           </ul>
         </nav>

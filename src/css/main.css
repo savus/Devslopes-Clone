@@ -38,6 +38,7 @@ body {
   font-size: 1rem;
   text-align: left;
   font-weight: 400;
+  color: var(--font-base);
 }
 
 a {
@@ -50,10 +51,12 @@ ul {
   list-style: none;
 }
 
-.flex-centered {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.container {
+  width: 100%;
+  max-width: 1024px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
 
 .btn {

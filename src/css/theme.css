@@ -1,5 +1,6 @@
 :root {
   --bg-base: #f5f5f5;
+  --font-base: rgb(25, 25, 25);
   --lnk-base: #969696;
   --lnk-hover: #000;
 }
