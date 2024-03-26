@@ -4,6 +4,7 @@ import "./css/main.css";
 import "./css/theme.css";
 import "./css/responsive.css";
 import { VideoSection } from "./Components/VideoSection";
+import { ServicesSection } from "./Components/ServicesSection";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <MainSection>
         <TopHeader />
         <VideoSection />
+        <ServicesSection />
       </MainSection>
     </>
   );
