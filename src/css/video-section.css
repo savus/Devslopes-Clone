@@ -33,7 +33,7 @@
 }
 
 .video-section .play-button {
-  background-color: var(--lnk-base);
+  background-color: var(--lnk-color);
   width: 70px;
   height: 70px;
   font-size: 25px;

@@ -1,5 +1,10 @@
 import { useEffect, useState } from "react";
 import "../css/top-header.css";
+import { Navbar } from "./Navbar";
+import { NavItem } from "./NavItem";
+
+const devslopesLogo =
+  "https://import.cdn.thinkific.com/88925/5RGTrmvS4SfYoD10SKAw_logo.png";
 
 export const TopHeader = () => {
   const useReact = true;
@@ -16,7 +21,6 @@ export const TopHeader = () => {
       });
     }
   }, []);
-
   return (
     <header className="top-header">
       <div
@@ -24,7 +28,7 @@ export const TopHeader = () => {
       >
         <div className="logo-container">
           <a href="#">
-            <img src="../src/images/devslopes-logo.png" alt="" />
+            <img src={devslopesLogo} alt="Devslopes Logo" />
           </a>
         </div>
         <button
@@ -43,22 +47,12 @@ export const TopHeader = () => {
           )}
           <span>Menu</span>
         </button>
-        <nav className="top-navigation">
-          <ul className="header-nav">
-            <li>
-              <a href="#">Plans</a>
-            </li>
-            <li>
-              <a href="#">Youtube</a>
-            </li>
-            <li>
-              <a href="#">Instagram</a>
-            </li>
-            <li>
-              <a href="#">Sign In</a>
-            </li>
-          </ul>
-        </nav>
+        <Navbar>
+          <NavItem iconClass="" text="Plans" />
+          <NavItem iconClass="" text="Youtube" />
+          <NavItem iconClass="" text="Instagram" />
+          <NavItem iconClass="" text="Sign In" />
+        </Navbar>
       </div>
     </header>
   );

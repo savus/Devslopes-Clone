@@ -15,6 +15,10 @@
   --size-100: 6.25rem;
   --size-150: 9.375rem;
   --size-200: 12.5rem;
+  /* base styles */
+  --nav-size: 80px;
+  --border-radius: 8px;
+  --transition-speed: 350ms;
 }
 
 *,
@@ -38,13 +42,14 @@ body {
   font-size: 1rem;
   text-align: left;
   font-weight: 400;
-  color: var(--font-base);
+  color: var(--text-color);
 }
 
 a {
   text-decoration: none;
   outline: none;
   background: transparent;
+  color: var(--lnk-color);
 }
 
 ul {

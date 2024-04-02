@@ -1,7 +1,7 @@
 :root {
-  --bg-base: #f5f5f5;
-  --bg-secondary: #969696;
-  --font-base: rgb(25, 25, 25);
-  --lnk-base: #969696;
+  --bg: #f5f5f5;
+  --bg-accent: #969696;
+  --text-color: rgb(25, 25, 25);
+  --lnk-color: #969696;
   --lnk-hover: #000;
 }
