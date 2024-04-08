@@ -1,0 +1,12 @@
+.top-header {
+  border-bottom: 1px solid var(--box-shadow);
+  background-color: var(--bg-soft);
+  box-shadow: 3px 0px 10px 5px var(--box-shadow);
+}
+
+.top-header .header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: var(--nav-size);
+}

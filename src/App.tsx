@@ -1,9 +1,13 @@
 import "./css/main.css";
 import "./css/theme.css";
-import "./css/responsive.css";
+import { TopHeader } from "./Components/TopHeader";
 
 function App() {
-  return <></>;
+  return (
+    <>
+      <TopHeader />
+    </>
+  );
 }
 
 export default App;
