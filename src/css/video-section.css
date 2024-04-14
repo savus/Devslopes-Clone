@@ -1,0 +1,42 @@
+.video-section {
+  background-image: url("https://import.cdn.thinkific.com/88925/qagCmQb9T2aTYEhVzn5L_thinkific-banner.png");
+  background-color: yellow;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: var(--video-height);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.video-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.video-section .play-button {
+  --button-size: calc(var(--video-height) * 0.15);
+  width: var(--button-size);
+  height: var(--button-size);
+  background-color: var(--bg-dropdown);
+  color: #fff;
+  border-radius: 50%;
+  font-size: calc(var(--button-size) * 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.video-section .play-button i {
+  pointer-events: none;
+  user-select: none;
+}
