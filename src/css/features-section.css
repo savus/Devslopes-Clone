@@ -1,0 +1,28 @@
+.features-section article {
+  padding: 50px 0;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+
+.features-section article h2 {
+  font-size: var(--size-50);
+}
+
+.features-section article h4 {
+  font-size: var(--size-30);
+  margin-bottom: 40px;
+}
+
+.features-section article h2,
+.features-section article h4 {
+  font-weight: 400;
+}
+
+.features-section p {
+  max-width: 720px;
+  margin: 0 auto 20px auto;
+}
+
+.features-section .features-header {
+  text-align: center;
+}

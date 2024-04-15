@@ -70,7 +70,6 @@
 .top-header .nav-item {
   font-size: var(--size-14);
   text-transform: uppercase;
-  letter-spacing: 1.8px;
 }
 
 @media (max-width: 1023px) {
