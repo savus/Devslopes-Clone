@@ -1,6 +1,12 @@
-import { ReactNode } from "react";
 import "../css/video-section.css";
+import { VideoPlayButton } from "./VideoPlayButton";
 
-export const VideoSection = ({ children }: { children: ReactNode }) => {
-  return <section className="video-section">{children}</section>;
+export const VideoSection = () => {
+  return (
+    <section className="video-section">
+      <VideoPlayButton />
+      <h2 className="video-header">Learn / Code / Create</h2>
+      <h3 className="video-subheader">Blockchain * Apps * Games * Web</h3>
+    </section>
+  );
 };
