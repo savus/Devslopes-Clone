@@ -2,18 +2,18 @@
   border-bottom: 1px solid var(--box-shadow);
   background-color: var(--bg-soft);
   box-shadow: 3px 0px 10px 5px var(--box-shadow);
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .top-header.aria-expanded-true {
   box-shadow: unset;
   background-color: var(--bg-dropdown);
   border-bottom: none;
-  position: fixed;
-  top: 0;
   bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 20;
 }
 
 .top-header .header-container {

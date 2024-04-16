@@ -1,28 +1,64 @@
 .features-section article {
   padding: 50px 0;
-  line-height: 1.5;
-  letter-spacing: 1px;
+  line-height: 1.2;
+  letter-spacing: 0.5px;
 }
 
-.features-section article h2 {
-  font-size: var(--size-50);
+.features-section .features-intro {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  text-align: center;
 }
 
-.features-section article h4 {
-  font-size: var(--size-30);
-  margin-bottom: 40px;
+.features-section .headings-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.features-section article h2,
-.features-section article h4 {
+.features-section .headings-container h2,
+.features-section .headings-container h3 {
   font-weight: 400;
 }
 
-.features-section p {
-  max-width: 720px;
-  margin: 0 auto 20px auto;
+.features-section .headings-container h2 {
+  font-size: var(--size-40);
 }
 
-.features-section .features-header {
-  text-align: center;
+.features-section .headings-container h3 {
+  font-size: var(--size-25);
+}
+
+.features-section .intro-body {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+.features-section .intro-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.features-section .intro-images {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.features-section img {
+  width: 500px;
+}
+
+@media (max-width: 767px) {
+  .features-section .headings-container h2 {
+    font-size: var(--size-30);
+  }
+
+  .features-section .headings-container h3 {
+    font-size: var(--size-20);
+  }
 }

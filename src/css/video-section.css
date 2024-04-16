@@ -66,3 +66,13 @@
   text-transform: uppercase;
   display: flex;
 }
+
+@media (max-width: 767px) {
+  .video-section h2 {
+    font-size: var(--size-30);
+  }
+
+  .video-section h3 {
+    font-size: var(--size-20);
+  }
+}
