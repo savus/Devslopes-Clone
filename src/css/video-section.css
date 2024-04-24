@@ -22,7 +22,7 @@
 }
 
 .video-section .play-button {
-  --button-size: calc(var(--video-height) * 0.15);
+  --button-size: calc(var(--video-height) * 0.1);
   width: var(--button-size);
   height: var(--button-size);
   background-color: var(--bg-dropdown);

@@ -1,8 +1,12 @@
+import { ReactNode } from "react";
+
 export const Feature = ({
+  children,
   heading,
   description,
   image,
 }: {
+  children: ReactNode;
   heading: string;
   description: string;
   image: string;
@@ -15,6 +19,7 @@ export const Feature = ({
       <div className="content-container">
         <h2 className="feature-heading">{heading}</h2>
         <p className="feature-description">{description}</p>
+        {children}
       </div>
     </article>
   );

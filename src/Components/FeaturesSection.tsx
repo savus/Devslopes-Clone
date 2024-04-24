@@ -15,27 +15,39 @@ export const FeaturesSection = () => {
         image={Videos}
         heading="Videos & Source Code"
         description="All access to our videos and source code. We regularly maintain all our content so you’re always up to date. "
-      />
+      >
+        <></>
+      </Feature>
       <Feature
         image={Projects}
         heading="Projects & Exercises"
         description="You’ll build real projects as you would in a job or startup. These aren’t easy, but rest assured they will prepare you for your next professional project."
-      />
+      >
+        <></>
+      </Feature>
       <Feature
         image={Plan}
         heading="Guided Training"
         description="Content is strategically placed in each course to give you the best learning experience. It's like being taking on a learning path. "
-      />
+      >
+        <></>
+      </Feature>
       <Feature
         image={Networking}
         heading="Networking & Help"
         description="You'll get access to our code forums where you can post questions, get help, and network with our team and the community. "
-      />
+      >
+        <></>
+      </Feature>
       <Feature
         image={Rocket}
         heading="Get Started Now"
         description="Checkout some of the free previews on our courses and start learning today. "
-      />
+      >
+        <button className="btn btn-primary explore-courses-button">
+          Explore Courses
+        </button>
+      </Feature>
     </section>
   );
 };
