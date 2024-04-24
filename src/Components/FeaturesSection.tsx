@@ -6,6 +6,7 @@ import Projects from "../assets/images/projects.png";
 import Plan from "../assets/images/lesson-plan.svg";
 import Networking from "../assets/images/networking.png";
 import Rocket from "../assets/images/rocket.png";
+import { Button } from "./Shared/Button";
 
 export const FeaturesSection = () => {
   return (
@@ -44,9 +45,7 @@ export const FeaturesSection = () => {
         heading="Get Started Now"
         description="Checkout some of the free previews on our courses and start learning today. "
       >
-        <button className="btn btn-primary explore-courses-button">
-          Explore Courses
-        </button>
+        <Button text="Explore Courses" className="explore-courses-button" />
       </Feature>
     </section>
   );
